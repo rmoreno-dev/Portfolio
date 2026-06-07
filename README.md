@@ -4,7 +4,7 @@ Maqueta académica de portafolio personal desarrollada con HTML, CSS, Bootstrap 
 
 ## Descripción
 
-Este proyecto presenta una maqueta simple de portafolio profesional para Rodolfo Moreno, orientada a Cloud Data Analytics, AWS, Python, SQL, Power BI y análisis de operaciones gastronómicas.
+Este proyecto presenta una maqueta simple de portafolio profesional, orientada a Cloud Data Analytics, AWS, Python, SQL, Power BI y análisis de operaciones gastronómicas.
 
 ## Estructura del proyecto
 
@@ -38,9 +38,7 @@ Proyecto/
 - Dos media queries: tablet y escritorio.
 - Bootstrap por CDN.
 - Navbar responsive con menú hamburguesa en móvil.
-- Paleta visual profesional final: azul medianoche, azul nocturno, azul cloud, cian datos, verde oliva moderno, blanco humo, gris azulado y vino profundo usado con moderación.
 - Tipografías: Cormorant Garamond Bold para nombre/hero, IBM Plex Sans para subtítulos y textos, y JetBrains Mono para etiquetas técnicas.
-- Footer corregido a ancho completo.
 - Botón “Ir arriba” visible solo al llegar al fondo de la página.
 
 Se agregó el archivo app.js con la funcionalidad de scroll suave.
@@ -49,12 +47,11 @@ Se agregó el archivo app.js con la funcionalidad de scroll suave.
 
 © Rodolfo Moreno, Portafolio Profesional
 
-## Ajustes visuales v3
+## Ajustes visuales 
 
 - Se actualizó la paleta a una dirección más profesional: Cloud Data Portfolio · Dark Professional · Food & Beverage Analytics.
 - Se cambió el botón principal a Azul Cloud `#2563EB`.
-- Las etiquetas de proyectos ahora usan estilo tecnológico con azul cloud y cian datos.
+- Las etiquetas de proyectos ahora usan un estilo tecnológico con azul cloud y cian datos.
 - Se limitó Cormorant Garamond al nombre principal, marca y frase hero.
 - Se usa IBM Plex Sans para secciones, párrafos, botones y navegación.
 - Se agregó JetBrains Mono para etiquetas técnicas.
-- Frase principal actualizada a: “Café, nube y datos para decidir mejor.”
