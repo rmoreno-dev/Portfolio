@@ -1,0 +1,377 @@
+/*
+  Paleta profesional final:
+  Fondo principal oscuro: #0B1020
+  Fondo secundario: #111827
+  Azul Cloud: #2563EB
+  Cian Datos: #22D3EE
+  Verde Oliva Moderno: #64735A
+  Blanco Humo: #F8FAFC
+  Gris Azulado: #CBD5E1
+  Vino Profundo: #4A1828
+*/
+
+:root {
+  --color-bg: #0B1020;
+  --color-surface: #111827;
+  --color-surface-soft: rgba(248, 250, 252, 0.08);
+  --color-primary: #2563EB;
+  --color-primary-soft: #93C5FD;
+  --color-accent: #22D3EE;
+  --color-wine: #4A1828;
+  --color-olive: #64735A;
+  --color-text: #F8FAFC;
+  --color-muted: #CBD5E1;
+  --color-border: rgba(203, 213, 225, 0.16);
+  --shadow-soft: 0 22px 60px rgba(0, 0, 0, 0.34);
+}
+
+/* Estilos base Mobile First: primero se diseña para pantallas pequeñas. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 14% 12%, rgba(34, 211, 238, 0.12), transparent 28rem),
+    radial-gradient(circle at 88% 4%, rgba(37, 99, 235, 0.14), transparent 24rem),
+    radial-gradient(circle at 80% 84%, rgba(74, 24, 40, 0.18), transparent 26rem),
+    linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 62%, #0F172A 100%);
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  overflow-x: hidden; /* Evita scroll horizontal innecesario. */
+}
+
+h1,
+.navbar-brand,
+.hero-phrase {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+h2,
+h3,
+p,
+li,
+a,
+button {
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+code,
+.project-tag,
+.tech-label {
+  font-family: "JetBrains Mono", "IBM Plex Mono", Consolas, monospace;
+}
+
+a {
+  color: var(--color-primary-soft);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+.site-header,
+.main-content {
+  width: 100%;
+  max-width: 1120px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.portfolio-navbar {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  letter-spacing: 0.03em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(248, 250, 252, 0.78);
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--color-accent);
+}
+
+.hero {
+  display: flex; /* Flexbox usado para ordenar texto e imagen. */
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(17, 24, 39, 0.94), rgba(11, 16, 32, 0.9)),
+    var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-text {
+  width: 100%;
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--color-accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin-bottom: 0.35rem;
+  font-size: clamp(3.1rem, 9vw, 5.9rem);
+}
+
+.hero-phrase {
+  margin-bottom: 1rem;
+  color: var(--color-primary-soft);
+  font-size: clamp(1.45rem, 4.5vw, 2.3rem);
+}
+
+.lead {
+  max-width: 640px;
+  color: var(--color-muted);
+  font-size: 1.04rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.custom-primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text);
+  font-weight: 600;
+  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.24);
+}
+
+.custom-primary:hover,
+.custom-primary:focus {
+  background: #1D4ED8;
+  border-color: #1D4ED8;
+  color: var(--color-text);
+}
+
+.custom-outline {
+  border-color: rgba(34, 211, 238, 0.54);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.custom-outline:hover,
+.custom-outline:focus {
+  background: rgba(34, 211, 238, 0.12);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 400px; /* Requisito de la actividad: ancho de imagen 400 px. */
+  height: 300px; /* Requisito de la actividad: alto de imagen 300 px. */
+  max-width: 100%;
+  display: block;
+  margin: auto; /* Requisito de la actividad: imagen centrada con margin auto. */
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(147, 197, 253, 0.34);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.44);
+}
+
+.content-grid {
+  display: grid; /* CSS Grid usado para estructurar contenido principal + aside. */
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card-panel,
+.side-panel {
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.content-section {
+  margin-bottom: 1rem;
+}
+
+.card-panel h2,
+.side-panel h2 {
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  font-size: clamp(1.55rem, 5vw, 2.15rem);
+}
+
+.card-panel p,
+.side-panel li {
+  color: var(--color-muted);
+}
+
+.project-list {
+  display: flex; /* Flexbox usado para organizar tarjetas de proyectos. */
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-card {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+  color: var(--color-primary-soft);
+  font-size: 1.35rem;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 0.24rem 0.65rem;
+  background: rgba(37, 99, 235, 0.16);
+  border: 1px solid rgba(37, 99, 235, 0.45);
+  border-radius: 999px;
+  color: var(--color-primary-soft);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.side-panel ul {
+  padding-left: 1.25rem;
+}
+
+.side-panel li::marker {
+  color: var(--color-accent);
+}
+
+.btn-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+  display: none;
+  border: 1px solid rgba(34, 211, 238, 0.38);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-weight: 600;
+  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.3);
+  cursor: pointer;
+}
+
+.btn-top.is-visible {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-top:hover,
+.btn-top:focus {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.site-footer {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  background: rgba(17, 24, 39, 0.96);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+.footer-inner {
+  max-width: 1120px;
+}
+
+.footer-brand {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* Media query para tablet: mejora distribución del hero y botones. */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    flex: 1 1 220px;
+  }
+}
+
+/* Media query para escritorio: activa layout de contenido + aside. */
+@media (min-width: 992px) {
+  .content-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .side-panel {
+    position: sticky;
+    top: 1rem;
+  }
+}

@@ -48,9 +48,9 @@ Se aplicó una paleta visual personalizada:
 
 | Uso | Color | HEX |
 | --- | --- | --- |
-| Base masculina | Negro Café Profundo | `#0B0B0D` |
+| Base principal | Negro Café Profundo | `#0B0B0D` |
 | Base elegante | Azul Nocturno | `#111A2E` |
-| Acento romántico | Vino Oscuro | `#4A1828` |
+| Acento | Vino Oscuro | `#4A1828` |
 | Contraste cálido | Marfil Cálido | `#F2E8DA` |
 | Acento natural | Verde Oliva Grisáceo | `#6F7356` |
 | Acento sensible | Rosa Ceniza | `#B98A95` |
@@ -91,17 +91,8 @@ Funcionalidad implementada:
 - Al hacer clic, la página se desplaza suavemente hacia arriba.
 - Después del clic, el botón se oculta nuevamente.
 
-### 7. Footer corregido
-
-El footer ahora ocupa el ancho completo de la pantalla y muestra el texto solicitado:
+### 7. Footer 
 
 `© Rodolfo Moreno, Portafolio Profesional`
 
-## Entrega
 
-Para entregar:
-
-1. Extraer el ZIP en la raíz del proyecto.
-2. Revisar `index.html` en el navegador.
-3. Subir los cambios a GitHub.
-4. Compartir el enlace del repositorio en Moodle.
