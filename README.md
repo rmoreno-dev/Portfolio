@@ -43,6 +43,46 @@ Proyecto/
 
 Se agregó el archivo app.js con la funcionalidad de scroll suave.
 
+
+## Definir y ejemplificar comandos básicos de Git
+
+Como parte de la documentación técnica del proyecto, se incluyen los comandos básicos de Git utilizados para inicializar, revisar y registrar cambios en un repositorio local.
+
+| Comando | Definición breve | Ejemplo de uso |
+|---|---|---|
+| `git --version` | Muestra la versión instalada de Git en el sistema. | `git --version` |
+| `git init` | Inicializa un repositorio Git en la carpeta actual del proyecto. | `git init` |
+| `git add` | Agrega cambios al área de preparación o *staging*. | `git add .` |
+| `git commit` | Registra los cambios preparados con un mensaje descriptivo. | `git commit -m "Primer commit"` |
+| `git status` | Muestra el estado actual del repositorio y los archivos modificados, agregados o pendientes. | `git status` |
+
+### Comentario técnico de uso
+
+```bash
+# Verifica que Git esté instalado y muestra la versión disponible.
+git --version
+
+# Inicializa Git dentro de la carpeta actual del proyecto.
+git init
+
+# Agrega todos los archivos modificados o nuevos al área de preparación.
+git add .
+
+# Crea un registro de cambios con un mensaje descriptivo.
+git commit -m "Primer commit"
+
+# Revisa el estado del repositorio después de agregar o confirmar cambios.
+git status
+```
+
+### Flujo básico recomendado
+
+```bash
+git add .
+git commit -m "mensaje"
+git status
+```
+
 ## Autor
 
 © Rodolfo Moreno, Portafolio Profesional
